@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Making Favor Coffee</string>
+    <string name="e_mail">E-Mail :</string>
+    <string name="password">Password :</string>
+    <string name="new_register">New Register</string>
+
+    <string name="title_haveSpace">Have Space</string>
+    <string name="message_haveSpace">Please Fill All Every Blank</string>
+    <string name="title_idCard">ID Card False</string>
+    <string name="message_idCard">Please Fill 13 Digi on ID Card</string>
+    <string name="title_userFalse">User False</string>
+    <string name="message_userFalse">No This Email in my Database</string>
+    <string name="title_passFalse">Password False</string>
+    <string name="message_passFalse">Please Try again Password False</string>
+
+    <string name="open">Open Menu</string>
+    <string name="close">Close Menu</string>
+
+    <string name="mocha">Mocha</string>
+    <string name="espresso">Espresso</string>
+    <string name="latte">Latte</string>
+    <string name="cappucchino">Cappucchino</string>
+    <string name="americano">Americano</string>
+
+    <string name="espresso_choose">Espresso</string>
+    <string name="cocoapowder">Cocoapowder</string>
+    <string name="milk">Milk</string>
+    <string name="frappe_powder">Frappe powder</string>
+
+    <string name="shot">g</string>
+    <string name="teaspoons">g</string>
+    <string name="oz">g</string>
+
+</resources>

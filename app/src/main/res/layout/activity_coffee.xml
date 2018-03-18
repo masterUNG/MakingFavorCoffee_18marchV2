@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rmutsb.mook.chatchon.makingfavorcoffee.CoffeeActivity">
+
+    <!--Main Content-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--Toolbar-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarCoffee"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <!--Content Frangment-->
+        <FrameLayout
+            android:id="@+id/contentFragmentCoffee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+    <!--Drawer Menu-->
+    <LinearLayout
+        android:padding="@dimen/padding"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_width="320dp"
+        android:layout_height="match_parent">
+
+        <!--Content Menu-->
+        <!--Home-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Icon-->
+            <ImageView
+                android:src="@drawable/moccha"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--Name-->
+            <TextView
+                android:clickable="true"
+                android:id="@+id/txtHome"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/h2"
+                android:text="Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--Mocha-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Icon-->
+            <ImageView
+                android:src="@drawable/moccha"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--Name-->
+            <TextView
+                android:clickable="true"
+                android:id="@+id/txtMocha"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/h2"
+                android:text="@string/mocha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--Espresso-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Icon-->
+            <ImageView
+                android:src="@drawable/espresso"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--Name-->
+            <TextView
+                android:clickable="true"
+                android:id="@+id/txtEspresso"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/h2"
+                android:text="@string/espresso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--Latte-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Icon-->
+            <ImageView
+                android:src="@drawable/latte"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--Name-->
+            <TextView
+                android:clickable="true"
+                android:id="@+id/txtLatte"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/h2"
+                android:text="@string/latte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--Cappucchino-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Icon-->
+            <ImageView
+                android:src="@drawable/cuppuchino"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--Name-->
+            <TextView
+                android:clickable="true"
+                android:id="@+id/txtCappucchino"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/h2"
+                android:text="@string/cappucchino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--Americano-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Icon-->
+            <ImageView
+                android:src="@drawable/americano"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--Name-->
+            <TextView
+                android:clickable="true"
+                android:id="@+id/txtAmericano"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/h2"
+                android:text="@string/americano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--Show List Order-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Icon-->
+            <ImageView
+                android:src="@drawable/americano"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--Name-->
+            <TextView
+                android:clickable="true"
+                android:id="@+id/txtShowListOrder"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/h2"
+                android:text="Show Order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.DrawerLayout>

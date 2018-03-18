@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_above="@+id/txtTotelPrice"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--ShowdateTime-->
+        <TextView
+            android:id="@+id/txtDateTime"
+            android:layout_gravity="end"
+            android:textStyle="bold"
+            android:text="dd-MM-yyyy HH:mm"
+            android:textSize="@dimen/h1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--content-->
+        <ListView
+            android:id="@+id/listViewOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <!--show Total-->
+    <TextView
+        android:id="@+id/txtTotelPrice"
+        android:layout_above="@+id/linFootBar"
+        android:layout_alignParentRight="true"
+        android:text="Total : 123 THB"
+        android:textSize="@dimen/h1"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--foodbar-->
+    <LinearLayout
+        android:id="@+id/linFootBar"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <Button
+            android:id="@+id/btnConfirmOrder"
+            android:text="Confirm Order"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
